@@ -116,9 +116,13 @@ And so on...
 <p>Ah, yeah...</p>
 
 <ul>
+<li>Whitespace at the beginning and end of a node's string is ignored.<br>
+Empty lines are ignored too.<br>
+Use '{}' or '[]' to make the "empty node"<br>
+</li>
 <li>'/' (slash) is used for escaping. So '/x' makes to treat 'x' literally (ex: '/,' --&gt; ',' , '//' --&gt; '/' etc.)<br>
 It's to allow commas and brackets be in the text.</li>
-<li>Each attribute is a pair of 'name' and (optional) value. Name are delimited by ':' (colon) or '=' (equals sign). 
+<li>Each attribute is a pair of the name and optional value. The name is separated from the value (if any) by ':' (colon) or '=' (equals sign).<br>
 If attribute has no an explicit value (ex. <code>{gray, big}</code>) then it is implicitly equal to <em>true</em>.<br>
 Attributes are delimited by ',' (comma)</li>
 <li>Special symbol '#' (number sign | hash sign | octothorpe (!?)) is reserved for the future use (yes, we'll have comments! and not only...). It MUST be escaped ('/#') everywhere for now</li>
