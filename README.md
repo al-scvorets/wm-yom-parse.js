@@ -1,5 +1,5 @@
 # wm-yom-parse.js
-is a translator from the mysterious but human-redable language Yom into less misterious but computer-readable javascript object.  
+is a translator from the mysterious but human-readable language Yom into less misterious but computer-readable javascript object.  
 
 ## When to use it
 
