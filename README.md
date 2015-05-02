@@ -3,7 +3,7 @@ is a translator from the mysterious but human-readable language Yom into less mi
 
 ## When to use it
 
-The scope of application are not yet clear. Perhaps this scope are endless.
+The scope of application are not yet clear. Perhaps this scope is endless.
 
 ## How to use it
 
