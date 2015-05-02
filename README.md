@@ -8,7 +8,7 @@ The scope of application is not clear yet. Perhaps this scope is endless.
 ## How to use it
 
 ```
-<script src="wm-html-include.js"> </script>
+<script src="wm-yom-parse.js"> </script>
 <script>
     var jsObj =                         // the result is common js data object. You even can JSON.stringify it
       window.wmYomParse (source_data);  // the source is some text on the mysterious language Yom
