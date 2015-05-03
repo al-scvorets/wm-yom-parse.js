@@ -54,11 +54,11 @@ and
 </script>
 ```
 
-## Examples
-* To be done, soon
-
-## Much more details
+## More details
 are [here](http://al-scvorets.github.io/wm-yom-parse.js/)
+
+## Demo
+* To be done soon
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT)
