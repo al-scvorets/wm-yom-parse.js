@@ -2,7 +2,7 @@
 is a translator from the human-readable hierarchical data presentation into `javascript object`.  
 The data are presented in a `YOM` format, which is some extension of `CSV` for tree-like structures.  
    
-Example (some imaginary application) :  
+Example (some imaginary application's menu) :  
 ```
 File [New, Open, Save, Remove],
 View [
@@ -22,7 +22,7 @@ Result:
                 {
                     "label": "New",
 
-// ... and many more rows; too much to give full content ...
+// ... and many more text lines; too much to put here in full ...
 
                 {
                     "label": "About",
@@ -37,11 +37,11 @@ Result:
 
 ## When to use it
 
-One most likely may use it when:
-* Data are of the hierarchical nature  
+One most likely may need to use it when:
+* data are of the hierarchical nature  
 
 and
-* Data are entirely separated from their markup
+* data are entirely separated from their markup
 
 
 ## How to use it
