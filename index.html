@@ -29,18 +29,18 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a id="prehistory" class="anchor" href="#prehistory" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prehistory</h1>
+<a id="purposes-of-yom-language" class="anchor" href="#purposes-of-yom-language" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purposes of YOM language</h1>
 
-<p><del>TL'DR This project emerged because of the stupid and lazy users</del><br>
-The aim of the project was to organize some customers' data in simple and human-readable manner.<br>
-Source data may be saved/edited in this format, but for visualization and other processing they have to be converted into Javascript objects.<br>
+<p>The aim of the YOM project is to organize some customers' data in simple and human-readable manner.<br>
+Source data may be saved/edited in this format, but they have to be converted into <code>javascript objects</code> for visualization and other processing.<br>
 The situation is very similar to when the data in CSV format may be stored/edited separately from their pattern in a spreadsheet or database.<br>
 But unlike CSV, which allows you to store tabular data, YOM is used to store data with hierarchical (tree-like) structures of arbitrary depth.<br>
 Examples of such data are given below.  </p>
 
-<p>"And where does the <del>stupid and lazy</del> users?"<br>
-The fact that customers categorically refused to use XML (ah, it would be nice), and more over JSON (that would be perfect!)<br>
-So I had to invent a new language for them: YOM.</p>
+<hr>
+
+<p>TL;DR  YOM solves about the same problem as the XML, but for those cases where the data is completely separated from the markup.<br>
+In this case XML is redundant and less human-readable, since all nodes may look like <code>&lt;node&gt; .... &lt;/node&gt;</code> </p>
 
 <h1>
 <a id="yom-by-examples" class="anchor" href="#yom-by-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>YOM by Examples</h1>
@@ -133,12 +133,12 @@ And it will be in some nearest build.</li>
 <h1>
 <a id="whats-in-the-result" class="anchor" href="#whats-in-the-result" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's in the result</h1>
 
-<p>YOM parse function returns the javascript object of the form:</p>
+<p>YOM parser returns the javascript object of the form:</p>
 
 <pre><code>{
     label: "string",               // a text value of the node
-    attr:  {a1: v1, a2: v2, ...},  // attributes of the node
-    nodes: [{}, {}, ...]           // array of subnodes; each element is {label, attr, nodes} triplet;
+    attr:   {a1: v1, a2: v2, ...}, // attributes of the node
+    nodes: [{}, {}, ...]           // arrray of subnodes; each element is {label, attr, nodes} triplet;
                                    //   and so on, recursively
 }
 </code></pre>
@@ -170,6 +170,16 @@ And it will be in some nearest build.</li>
       </div>
     </div>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62159731-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
