@@ -39,14 +39,14 @@ Examples of such data are given below.  </p>
 
 <hr>
 
-<p>TL;DR  YOM solves about the same problem as the XML, but for those cases where the data is completely separated from the markup.<br>
-In this case XML is redundant and less human-readable, since all nodes may look like <code>&lt;node&gt; .... &lt;/node&gt;</code> </p>
+<p><strong>TL;DR</strong>  YOM solves about the same problem as the XML, but for those cases where the data is completely separated from the markup.<br>
+In this case XML is redundant and less human-readable, since all nodes look like <code>&lt;node&gt; .... &lt;/node&gt;</code>  </p>
 
 <h1>
 <a id="yom-by-examples" class="anchor" href="#yom-by-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>YOM by Examples</h1>
 
 <h2>
-<a id="example-1" class="anchor" href="#example-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #1</h2>
+<a id="example-1-simple-taxonomy-tree" class="anchor" href="#example-1-simple-taxonomy-tree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #1 (simple taxonomy tree)</h2>
 
 <pre><code>animals [cat, dog, elephant {big, gray}],
 plants [deciduous   [oak, maple, baobab],
@@ -55,7 +55,7 @@ plants [deciduous   [oak, maple, baobab],
 </code></pre>
 
 <h2>
-<a id="example-2" class="anchor" href="#example-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #2</h2>
+<a id="example-2-menu-for-some-imaginary-app" class="anchor" href="#example-2-menu-for-some-imaginary-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #2 (menu for some imaginary app)</h2>
 
 <pre><code>File [
     New, Open, Save,
@@ -70,7 +70,7 @@ Help [On-line, Forum, About]
 </code></pre>
 
 <h2>
-<a id="example-3" class="anchor" href="#example-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #3</h2>
+<a id="example-3-some-web-page-structure" class="anchor" href="#example-3-some-web-page-structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #3 (some Web page structure)</h2>
 
 <pre><code>Header {height:10} [
     Welcome,
@@ -84,7 +84,7 @@ Footer [Status Bar [Info1, Info2], Powered By, Copyright notice {color: gold}]
 </code></pre>
 
 <h2>
-<a id="and-example-4" class="anchor" href="#and-example-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>And Example #4</h2>
+<a id="example-4-contents-of-this-page" class="anchor" href="#example-4-contents-of-this-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example #4 (contents of this page)</h2>
 
 <pre><code>Prehistory [
     blah-blah-blah
@@ -98,9 +98,6 @@ YOM by Examples [
 
 And so on...
 </code></pre>
-
-<h2>
-<a id="i-hope-everything-is-clear-to-the-majority-for-others" class="anchor" href="#i-hope-everything-is-clear-to-the-majority-for-others" aria-hidden="true"><span class="octicon octicon-link"></span></a>I hope everything is clear to the majority. For others:</h2>
 
 <h1>
 <a id="semi-formal-definition" class="anchor" href="#semi-formal-definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>(Semi-)Formal Definition</h1>
@@ -133,7 +130,7 @@ And it will be in some nearest build.</li>
 <h1>
 <a id="whats-in-the-result" class="anchor" href="#whats-in-the-result" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's in the result</h1>
 
-<p>YOM parser returns the javascript object of the form:</p>
+<p>YOM parser converts YOM formatted text and returns the javascript object of the form:</p>
 
 <pre><code>{
     label: "string",               // a text value of the node
@@ -142,6 +139,12 @@ And it will be in some nearest build.</li>
                                    //   and so on, recursively
 }
 </code></pre>
+
+<h1>
+<a id="relation-to-other-data-formats" class="anchor" href="#relation-to-other-data-formats" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relation to other data formats</h1>
+
+<p>YOM is based on <code>nested parentheses</code> idea by Sir <a href="https://en.wikipedia.org/wiki/Arthur_Cayley">Arthur Cayley</a><br>
+Similar format is <a href="http://evolution.genetics.washington.edu/phylip/newicktree.html">The Newick tree format</a></p>
 
 <h1>
 <a id="q--a" class="anchor" href="#q--a" aria-hidden="true"><span class="octicon octicon-link"></span></a>Q &amp; A</h1>
