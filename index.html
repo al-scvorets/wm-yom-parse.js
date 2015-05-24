@@ -125,19 +125,21 @@ Attributes are delimited by ',' (comma)</li>
 <li>Any of the symbols '\' | '+' | '-' may be used at the line end to make the line continuation.<br>
 It allows multiline node texts.</li>
 <li>Special symbol '#' (number sign | hash sign | octothorpe (!?)) is used for special processing:<br>
-1) # comments; if there is a space blank after '#' then a subsequent node is entirely ignored. It allows to make comments in the source</li>
+1) # comments; if there is a space blank after '#' then a subsequent node is entirely ignored. It allows to make comments in the source<br>
+2) #&lt;name&gt;. The &lt;name&gt; should start with letter, '<em>' or '$' and continues with letter, digit, '</em>' or '$'. It adds the prop <code>"hash": {&lt;name&gt;: true}</code> to a subsequent node.</li>
 </ul>
 
+<h3>
+<a id="comments-example" class="anchor" href="#comments-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comments example</h3>
+
 <pre><code>Normal text # this is ignored to the end of line
-Another text # inline comment, text continues/, but it's an another node
+2nd node's text # inline comment here, 3rd node's text
 # [
    Multiline comment:
-   2nd line,
-   etc.
+   2nd line of the comment,
+   etc. etc. etc.
 ]
 </code></pre>
-
-<p>2) #&lt;name&gt;. The &lt;name&gt; should start with letter, '<em>' or '$' and continues with letter, digit, '</em>' or '$'. It adds the prop <code>"hash": {&lt;name&gt;: true}</code> to a subsequent node.</p>
 
 <h1>
 <a id="whats-in-the-result" class="anchor" href="#whats-in-the-result" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's in the result</h1>
@@ -145,8 +147,8 @@ Another text # inline comment, text continues/, but it's an another node
 <p>YOM parser converts YOM formatted text and returns the javascript object of the form:</p>
 
 <pre><code>{
-    hash: {"hash_name": true},    // if any
-    text: "string",               // a text value of the node
+    hash: {"hash_name": true},     // if any
+    text: "string",                // a text value of the node
     attr:   {a1: v1, a2: v2, ...}, // attributes of the node
     nodes: [{}, {}, ...]           // arrray of subnodes; each element is {label, attr, nodes} triplet;
                                    //   and so on, recursively
