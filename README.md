@@ -14,18 +14,18 @@ Help [On-line, Forum, About]
 Result:
 ```
 {
-    "label": "",
+    "text": "",
     "nodes": [
         {
-            "label": "File",
+            "text": "File",
             "nodes": [
                 {
-                    "label": "New",
+                    "text": "New",
 
 // ... and many more text lines; too much to put here in full ...
 
                 {
-                    "label": "About",
+                    "text": "About",
                     "nodes": []
                 }
             ]
