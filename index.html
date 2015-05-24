@@ -150,7 +150,8 @@ It allows multiline node texts.</li>
     hash: {"hash_name": true},     // if any
     text: "string",                // a text value of the node
     attr:   {a1: v1, a2: v2, ...}, // attributes of the node
-    nodes: [{}, {}, ...]           // arrray of subnodes; each element is {label, attr, nodes} triplet;
+    nodes: [{}, {}, ...]           // arrray of subnodes;
+                                   //   each element is {[hash,] text, attr, nodes};
                                    //   and so on, recursively
 }
 </code></pre>
